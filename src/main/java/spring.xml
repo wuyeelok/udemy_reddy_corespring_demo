@@ -6,14 +6,15 @@
 
 	<bean id="navinAlien" class="com.kenneth.SpringDemo.NavinAlien">
 		<constructor-arg value="12"></constructor-arg>
-		<constructor-arg ref="navinLaptop"></constructor-arg>
+		<constructor-arg ref="laptop"></constructor-arg>
 		<!-- <property name="age" value="10"></property> <property name="laptop" 
-			ref="navinLaptop"></property> -->
+			ref="laptop"></property> -->
 	</bean>
 
-	<bean id="navinLaptop" class="com.kenneth.SpringDemo.NavinLaptop">
+	<bean id="laptop" class="com.kenneth.SpringDemo.Laptop">
 
 	</bean>
+
 
 
 </beans>

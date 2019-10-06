@@ -3,25 +3,25 @@ package com.kenneth.SpringDemo;
 public class NavinAlien implements Alien {
 
 	private final int age;
-	private final Laptop laptop;
+	private final Computer com;
 
 	/*
 	 * public NavinAlien() { System.out.println("Navin Alien Object Created.."); }
 	 */
 
-	public NavinAlien(int age, Laptop laptop) {
+	public NavinAlien(int age, Computer laptop) {
 
 		System.out.println("Navin Alien contructor with args");
 
 		this.age = age;
-		this.laptop = laptop;
+		this.com = laptop;
 	}
 
 	@Override
 	public void code() {
 
 		System.out.println("Im Coding...");
-		this.laptop.compile();
+		this.com.compile();
 
 	}
 
@@ -36,8 +36,8 @@ public class NavinAlien implements Alien {
 	 */
 
 	@Override
-	public Laptop getLaptop() {
-		return laptop;
+	public Computer getLaptop() {
+		return com;
 	}
 
 	/*

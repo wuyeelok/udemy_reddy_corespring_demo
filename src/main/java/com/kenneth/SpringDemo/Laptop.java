@@ -1,7 +1,10 @@
 package com.kenneth.SpringDemo;
 
-public interface Laptop {
+public class Laptop implements Computer {
 
-	public void compile();
+	@Override
+	public void compile() {
+		System.out.println("Code compile in Laptop");
+	}
 
 }
