@@ -13,12 +13,8 @@ public class App {
 
 		Alien obj1 = factory.getBean("navinAlien", Alien.class);
 		obj1.code();
-		obj1.setAge(15);
-		System.out.println(obj1.getAge());
 
-		Alien obj2 = factory.getBean("navinAlien", Alien.class);
-		obj2.code();
-		System.out.println(obj2.getAge());
+		System.out.println(obj1.getAge());
 
 	}
 }
