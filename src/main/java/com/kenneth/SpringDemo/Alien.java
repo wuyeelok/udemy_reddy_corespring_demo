@@ -6,10 +6,10 @@ public interface Alien {
 
 	public int getAge();
 
-	public void setAge(int age);
+	/* public void setAge(int age); */
 
 	public Laptop getLaptop();
 
-	public void setLaptop(Laptop laptop);
+	/* public void setLaptop(Laptop laptop); */
 
 }

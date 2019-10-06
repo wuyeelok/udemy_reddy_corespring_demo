@@ -5,8 +5,10 @@
 <beans>
 
 	<bean id="navinAlien" class="com.kenneth.SpringDemo.NavinAlien">
-		<property name="age" value="10"></property>
-		<property name="laptop" ref="navinLaptop"></property>
+		<constructor-arg value="12"></constructor-arg>
+		<constructor-arg ref="navinLaptop"></constructor-arg>
+		<!-- <property name="age" value="10"></property> <property name="laptop" 
+			ref="navinLaptop"></property> -->
 	</bean>
 
 	<bean id="navinLaptop" class="com.kenneth.SpringDemo.NavinLaptop">

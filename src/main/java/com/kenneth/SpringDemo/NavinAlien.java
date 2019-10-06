@@ -2,11 +2,19 @@ package com.kenneth.SpringDemo;
 
 public class NavinAlien implements Alien {
 
-	private int age;
-	private Laptop laptop;
+	private final int age;
+	private final Laptop laptop;
 
-	public NavinAlien() {
-		System.out.println("Navin Alien Object Created..");
+	/*
+	 * public NavinAlien() { System.out.println("Navin Alien Object Created.."); }
+	 */
+
+	public NavinAlien(int age, Laptop laptop) {
+
+		System.out.println("Navin Alien contructor with args");
+
+		this.age = age;
+		this.laptop = laptop;
 	}
 
 	@Override
@@ -22,21 +30,19 @@ public class NavinAlien implements Alien {
 		return age;
 	}
 
-	@Override
-	public void setAge(int age) {
-		System.out.println("Age assigned");
-		this.age = age;
-	}
+	/*
+	 * @Override public void setAge(int age) { System.out.println("Age assigned");
+	 * this.age = age; }
+	 */
 
 	@Override
 	public Laptop getLaptop() {
 		return laptop;
 	}
 
-	@Override
-	public void setLaptop(Laptop laptop) {
-		System.out.println("Setting laptop");
-		this.laptop = laptop;
-	}
+	/*
+	 * @Override public void setLaptop(Laptop laptop) {
+	 * System.out.println("Setting laptop"); this.laptop = laptop; }
+	 */
 
 }
