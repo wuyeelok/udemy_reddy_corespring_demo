@@ -4,6 +4,7 @@
 
 <beans>
 
-	<bean id="navinAlien" class="com.kenneth.SpringDemo.NavinAlien"></bean>
+	<bean id="navinAlien" class="com.kenneth.SpringDemo.NavinAlien"
+		scope="prototype"></bean>
 
 </beans>
