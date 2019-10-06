@@ -6,6 +6,11 @@
 
 	<bean id="navinAlien" class="com.kenneth.SpringDemo.NavinAlien">
 		<property name="age" value="10"></property>
+		<property name="laptop" ref="navinLaptop"></property>
+	</bean>
+
+	<bean id="navinLaptop" class="com.kenneth.SpringDemo.NavinLaptop">
+
 	</bean>
 
 

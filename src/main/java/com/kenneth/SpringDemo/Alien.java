@@ -8,4 +8,8 @@ public interface Alien {
 
 	public void setAge(int age);
 
+	public Laptop getLaptop();
+
+	public void setLaptop(Laptop laptop);
+
 }
