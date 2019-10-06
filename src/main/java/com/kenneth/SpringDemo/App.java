@@ -11,9 +11,14 @@ public class App {
 
 		ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
 
-		Alien obj = factory.getBean("navinAlien", Alien.class);
+		Alien obj1 = factory.getBean("navinAlien", Alien.class);
+		obj1.code();
+		obj1.setAge(15);
+		System.out.println(obj1.getAge());
 
-		obj.code();
+		Alien obj2 = factory.getBean("navinAlien", Alien.class);
+		obj2.code();
+		System.out.println(obj2.getAge());
 
 	}
 }
