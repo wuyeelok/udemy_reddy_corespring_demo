@@ -22,6 +22,7 @@ public class NavinAlien implements Alien {
 
 	@Override
 	public void setAge(int age) {
+		System.out.println("Age assigned");
 		this.age = age;
 	}
 

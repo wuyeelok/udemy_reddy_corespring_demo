@@ -4,6 +4,9 @@
 
 <beans>
 
-	<bean id="navinAlien" class="com.kenneth.SpringDemo.NavinAlien"></bean>
+	<bean id="navinAlien" class="com.kenneth.SpringDemo.NavinAlien">
+		<property name="age" value="10"></property>
+	</bean>
+
 
 </beans>
