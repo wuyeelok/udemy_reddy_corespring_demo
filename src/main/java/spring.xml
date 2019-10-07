@@ -4,15 +4,14 @@
 
 <beans>
 
-	<bean id="navinAlien" class="com.kenneth.SpringDemo.NavinAlien" autowire="byName">
+	<bean id="navinAlien" class="com.kenneth.SpringDemo.NavinAlien"
+		autowire="byType">
 		<!-- <constructor-arg value="12"></constructor-arg> <constructor-arg ref="laptop"></constructor-arg> -->
 		<property name="age" value="10"></property>
 		<!-- <property name="com" ref="desktop"></property> -->
 	</bean>
 
-	<bean id="com" class="com.kenneth.SpringDemo.Laptop">
-
-	</bean>
+	<!-- <bean id="com" class="com.kenneth.SpringDemo.Laptop"> </bean> -->
 
 
 	<bean id="desktop" class="com.kenneth.SpringDemo.Desktop">
